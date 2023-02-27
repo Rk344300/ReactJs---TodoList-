@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: hsl(200, 81%, 29%);
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px #6e6e6e;
+}
+.app-header {
+  display: flex;
+  /* border: 2px solid black; */
+  margin-top: 10px;
+  padding: 10px 0;
+  height: 30px;
+  width: 180px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bar-container {
+  width: 100%;
+  height: 15%;
+}
+
+.bar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bar input {
+  width: 65%;
+  height: 40px;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  outline: none;
+}
+
+.buton {
+  height: 40px;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  /* background: #799982; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.listContainer {
+  height: 500px;
+  width: 90%;
+  position: relative;
+  overflow-y: scroll;
+  display: grid;
+  place-items: center;
+}
+
+.listContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.todolist {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: cornsilk;
+}
+
+.todo-name {
+  font-size: 1.04rem;
+  font-weight: 500;
+}
+
+/* .todo-item i {
+  font-size: 1.2rem;
+} */
+
+.todolist-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todolist-icon div {
+  padding: 10px;
+  width: 300px;
+}
+
+.todolist-icon input {
+  outline: none;
+  width: 280px;
+  height: 20px;
+}
+
+.app-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #3a2d2d;
+  border-radius: 50%;
+  border-top-color: #252229;
+  animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  margin-right: 10px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+@keyframes span {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
